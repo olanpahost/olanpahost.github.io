@@ -1,0 +1,65 @@
+[
+	{
+		"title": "Lorem ipsum dolor sit",
+		"image": "img/img2.jpg",
+		"date": "12.12.12",
+		"author": "John",
+		"tag": "Природа",
+		"views": 123,
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam amet animi dolorum esse harum impedit nobis non optio perspiciatis possimus provident quas qui quia, quidem reiciendis rerum veritatis voluptas!"
+	},
+	{
+		"title": "Lorem ipsum dolor sit",
+		"image": "img/img2.jpg",
+		"date": "12.12.12",
+		"author": "John",
+		"tag": "Природа",
+		"views": 123,
+		"text": "Ad autem cupiditate debitis inventore, magni quasi quibusdam, rerum similique sunt suscipit, tenetur ullam vel! A, alias beatae blanditiis deleniti deserunt et expedita facere ipsam neque quasi quis quo tempore."
+	},
+	{
+		"title": "Lorem ipsum dolor sit",
+		"image": "img/img2.jpg",
+		"date": "12.12.12",
+		"author": "John",
+		"tag": "Природа",
+		"views": 123,
+		"text": "Adipisci, architecto commodi distinctio dolorem facere fuga illum necessitatibus quas quo sapiente similique tempora temporibus? Aspernatur consequatur dolore itaque quasi vitae! Esse ratione temporibus voluptatibus. Architecto asperiores eligendi ipsa repellendus!"
+	},
+	{
+		"title": "Lorem ipsum dolor sit",
+		"image": "img/img2.jpg",
+		"date": "12.12.12",
+		"author": "John",
+		"tag": "Природа",
+		"views": 123,
+		"text": "A ab aliquam atque autem commodi consequuntur, dolore doloremque ea earum illo inventore maiores minus molestiae nesciunt nisi non obcaecati omnis placeat quam quibusdam sint tenetur totam ut velit voluptatem."
+	},
+	{
+		"title": "Lorem ipsum dolor sit",
+		"image": "img/img2.jpg",
+		"date": "12.12.12",
+		"author": "John",
+		"tag": "Природа",
+		"views": 123,
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi consectetur, deleniti dolor dolorem eligendi enim hic in ipsam iste minus necessitatibus officia quae quasi quia quisquam quo recusandae sit temporibus? Autem, dicta eum laudantium nihil quos ratione suscipit vero! A ab, adipisci, assumenda at consequatur, dolor exercitationem illum itaque iusto laborum minima mollitia officiis provident quae quisquam repudiandae rerum sed totam! Adipisci alias aliquam autem commodi earum maxime neque nesciunt numquam! Accusamus aliquid animi enim facere hic illo non odio similique voluptatibus. Nihil pariatur quia quisquam? Asperiores dignissimos dolorem facilis maiores necessitatibus nobis nulla pariatur reiciendis tenetur voluptatem."
+	},
+	{
+		"title": "Lorem ipsum dolor sit",
+		"image": "img/img2.jpg",
+		"date": "12.12.12",
+		"author": "John",
+		"tag": "Природа",
+		"views": 123,
+		"text": "Aliquid illo magnam optio placeat veritatis! Debitis delectus eius ex incidunt ipsa iure mollitia, nostrum, officia officiis praesentium rem, reprehenderit sed tempore vel voluptate. Ab et maiores neque rerum voluptas."
+	},
+	{
+		"title": "Lorem ipsum dolor sit",
+		"image": "img/img2.jpg",
+		"date": "12.12.12",
+		"author": "Петро",
+		"tag": "Природа",
+		"views": 123,
+		"text": "A ab aliquam atque autem commodi consequuntur, dolore doloremque ea earum illo inventore maiores minus molestiae nesciunt nisi non obcaecati omnis placeat quam quibusdam sint tenetur totam ut velit voluptatem."
+	}
+]
