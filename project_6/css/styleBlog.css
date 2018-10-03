@@ -1,0 +1,260 @@
+/*own styles*/
+@font-face{
+    font-family: ProximaRegular;
+	src:url(../fonts/Proxima/ProximaNova-Reg.otf); 
+}
+@font-face{
+    font-family: ProximaBold;
+	src:url(../fonts/Proxima/ProximaNova-Bold.otf); 
+}
+@font-face{
+    font-family: ProximaLight;
+	src:url(../fonts/Proxima/ProximaNova-Light.otf); 
+}
+@font-face{
+    font-family: RobotoLight;
+	src:url(../fonts/Roboto/Roboto-Light.ttf); 
+}
+@font-face{
+    font-family: RobotoRegular;
+	src:url(../fonts/Roboto/Roboto-Regular.ttf); 
+}
+@font-face{
+    font-family: MyriadProRegular;
+	src:url(../fonts/MyriadPro-Regular.otf); 
+}
+@font-face{
+    font-family: MyriadProBold;
+	src:url(../fonts/MyriadPro-Bold.otf); 
+}
+
+.body{
+	border:1px solid black;
+}
+.header, footer{
+	height:67px;
+	width:100%;}
+.header{
+	margin-top:3px;
+	background-color:#f7c61d;
+	text-transform:uppercase;
+	font-size:16px;
+}
+footer{
+	background-color:#f8cc33;
+	font-size:12px;
+	font-family:RobotoRegular;
+	padding-top:30px;
+	color:#b39018;
+	font-size:14px;
+	font-family:ProximaLight;
+}
+footer ul:after, .calendar:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clear{
+	clear:both;
+}
+a.head:hover{
+	text-decoration:none;
+	color:white;
+}
+.menu{
+	width:30%;
+	height:40px;
+	float:left;
+	font-family: ProximaRegular;
+	font-size:16px;
+	text-align:center;
+	padding-top:27px;
+}
+.container .row:first-child{
+	height:79px;
+	font-family:ProximaBold;
+	font-size:24px;
+	padding-top:43px;
+	box-sizing:border-box;
+}
+a.img{
+	display:block;
+	overflow:hidden;
+	height:190px;
+	width:270px;
+	border-radius:5px;
+	position:relative;
+}
+a>img{
+	height:190px;
+	width:270px;
+	display:block;
+	position:absolute;
+}
+a.img>img:hover{
+	height:220px;
+	width:auto;
+	top:-20px;
+	left:-20px;
+}
+h2{
+	font-family:ProximaLight;
+	font-size:30px;
+	margin-top:-7px;
+}
+ul.DateAuthorTitle{
+	font-family:RobotoLight;
+	font-size:13px;
+	color:#999999;
+	margin:20px 0;
+}
+.DateAuthorTitle>li:not(:last-child){
+	float:left;
+	margin-right:10px;
+}
+ul.DateAuthorTitle>li:nth-of-type(2)::before,
+ul.DateAuthorTitle>li:nth-of-type(3)::before{
+	content:' | ';
+	position:relative;
+	right:5px;
+	color:#c6c6c6;
+}
+ul.DateAuthorTitle>li:last-child span, li:nth-of-type(3){
+	color:#edb907;
+}
+a:hover{
+	color:#f7c61d;
+	text-decoration:none;
+}
+
+.Article{
+	font-family:RobotoLight;
+	font-size:16px;
+	line-height:20px;
+}
+.PopNews{
+	font-family:RobotoRegular;
+	line-height:18px;
+	margin:-10px 0 20px;
+}
+a#button{
+	margin:-30px auto 80px;
+	display:block;
+	width:170px;
+	height:43px;
+	padding:0;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+.button{	
+	border:2px solid #f7c61d;
+	border-radius:5px;
+	box-sizing:border-box;
+	width:100%;	
+	height:43px;	
+	font:12px RobotoRegular;
+	letter-spacing:1px;
+	text-align:center;
+	padding:11px 0 10px;
+	position:relative;
+}
+.button>span#LessArt{
+	display: none;
+	position:absolute;
+	top:11px;
+	left:30px;
+}
+.button:hover{
+	background-color:#f7c61d;
+	color:white;
+}
+.button:active{
+	background-color:white;
+}
+/*.button:active>span:first-of-type{
+	color:rgba(255,255,255,0);
+}*/
+.button:active>span{
+	color:rgba(0,0,0,1);
+}
+
+.calendar{
+	width:237px;
+	height:241px;
+	border:1px solid #b9b9b9;
+	border-radius:3px;
+	margin: 40px 0 40px 20px;
+}
+#calendar1{
+	width:100%;
+	height:100%;
+	text-align: center;
+	font:13px RobotoRegular;
+}
+#calendar1 thead tr:nth-of-type(1) td.arrows{
+	color: #a7a7a7;
+}
+#calendar1 thead tr:nth-of-type(2) td{
+	 background-color: #e7e7e7;
+	 color: #888888;
+ }
+#calendar1 tbody td, table#calendar1{
+	border:1px solid #e5e5e5;
+	border-left:1px solid white;
+	border-collapse: collapse;
+}
+#calendar1 thead tr:nth-of-type(2) td~td{
+	border-left:1px solid white;
+}
+#calendar1 td{
+	padding-top:10px;
+}
+
+#today{
+	color:white;
+	background-color: #f7c61d;
+}
+#calendar1 tr td.nearbyMonth{
+	background-color: white;
+	color:#c1c1c1;
+}
+div.rightColumn{
+	width:100%;
+	margin-left:20px;
+}
+h3{
+	font-family:ProximaBold;
+	font-size:18px;
+	width:125px;
+	text-align:left;
+	position:relative;
+	margin-bottom:5px;
+}
+h3::after{
+	content:'';
+	position:absolute;
+	top:9px;
+	margin-left:10px;
+	width:118px;
+	border-top:1px solid #e5e5e5;
+}
+footer li{
+	float:left;
+	margin:0 20px;
+	color:black;
+	font-family:RobotoRegular;
+}
+.about:hover li,footer>.container:hover>div:first-child{
+	color:#f7c61d;	
+}
+.about li:hover>a{
+	color:white;
+}
+#social{
+	margin:-15px 0 0;
+}
+#social>li{
+	margin:0 0 0 13px;
+}

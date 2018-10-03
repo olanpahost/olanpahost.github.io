@@ -1,0 +1,62 @@
+.row:nth-of-type(n+2){
+	margin-bottom:70px;
+}
+.container, .col-md-12,.col-md-9,.col-md-7,.col-md-2{
+	padding:0;
+}
+.btn-social-icon.btn-lg{
+	font-size:11px;
+}
+.btn-facebook{
+	background-color:white;
+	color:#f8cc33;
+	border:1px solid white;
+}
+.btn-facebook:hover{
+	background-color:#f8cc33;
+	border:1px solid white;
+	color:white;
+}
+.btn-lg{
+	border-radius:22px;
+}
+/**/
+.input-group-addon{
+	background-color:rgba(255,255,255,1);	
+	border-style:hidden;
+}
+.input-group-sm>.input-group-addon{
+	padding:5px 8px 5px 10px;
+	height:15px;
+	margin:0;
+}
+.input-group-sm>input.form-control{
+	border-style:hidden;
+	font:16px  MyriadProRegular;
+	color:#b8b8b8 ;
+	box-shadow:none;
+	padding:0;
+}
+
+.glyphicon{
+	color:black;
+}
+.input-group.input-group-sm{
+	border:1px solid #e5e5e5;
+	width:237px;
+	height:25px;
+	box-sizing:border-box;
+	border-radius:15px;
+	overflow:hidden;
+	left:20px;
+}
+.input-group-sm>.form-control:hover{
+	border-color:#cecece;
+	font-family:MyriadProBold;
+}
+.input-group:hover .glyphicon{
+	color:#e3b002;
+}
+.input-group:focus .form-control{
+	font-weight:normal;
+}

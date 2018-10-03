@@ -1,0 +1,15 @@
+@font-face {
+  font-family: RalewayThin; /* font name for CSS */
+  src: local("Raleway Thin"), /* проверяем наличие шрифта в ОС пользователя */
+  url('../font/Raleway-Thin.ttf');
+}
+@font-face {
+  font-family: Yantramanav;
+  src: local("Yantramanav"),
+  url('../font/yantramanav-black.otf');
+}
+@font-face{
+  font-family: "Raleway Black";
+  src: local("Yantramanav"),
+  url('../font/Raleway-Black.ttf');
+}

@@ -1,0 +1,18 @@
+$bg : rgba(25, 30, 63, 1);
+$bg_opac:rgba(25, 30, 63, 0.5);
+$boxShad : rgba(0,0,0, 0.2);
+$fontColor:rgba(255, 255, 255,0.7);
+$maxH : 6989px;
+$headH:100vh;
+$missionH:100vh;
+$minW :1920px;
+$fontH: 19px;
+$h2-font: 4.5vmin;
+$fontDeco: $fontH*15;//font for deco digit 01...
+$mCenter:0 auto;
+$Hmission:70%;
+$Wmission:663px;
+$logowidth:240px;
+.wrapper{
+  box-sizing: padding-box;
+}

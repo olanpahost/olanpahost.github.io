@@ -1,0 +1,371 @@
+@import 'reset';
+@import 'var';
+@import "fonts";
+@import "bg";
+
+//власні стилі
+body{
+  background-color: $bg;
+  width:100vw;
+  overflow-x: hidden;
+}
+
+div.logo{
+  position:absolute;
+  width:7vw;
+  height:4.7vw;
+  top:46px;
+  left:45vw;
+  background:url("../img/logo.png") no-repeat;
+  background-size: contain;
+}
+header{
+  width:70%;
+  height:$headH;
+  max-height:100vh;
+  margin: $mCenter;
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav>ul, nav>[type="checkbox"]{
+  display:none;
+  list-style: none;
+  color:$fontColor;
+  li{
+    margin-left: -$fontH*0.5;
+    a{
+    font-size:$fontH*1.2;
+    line-height: 1.8*$fontH;
+      list-style: none;
+  }}
+}
+nav{
+  display:block;
+  max-width:45px;
+  height:5px;
+  align-self: flex-end;
+  margin-top: 52px;
+  font-size: $fontH / 1.2;
+  line-height:$fontH * 1.2 ;
+  color:$fontColor;
+}
+label{
+  display:inline-block;
+}
+label[for="nav"]:before, label[for="nav"]:after{
+  content: '.';
+  font-size:0;
+  width: $fontH*3;
+  height: 3px;
+  background: #eee;
+  display: block;
+  border-radius: 2px;
+  margin:$fontH*0.4 0;
+}
+#nav:checked ~ ul{
+  display: block;
+}
+h2{
+  margin-top:42vh;
+  font-size:$h2-font;
+  color: #eee;
+}
+//mission
+div.mission, .projects, .team{
+  position:relative;
+  width:100%;
+  height:$missionH;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+}
+div.Big-numbers{
+  position:relative;
+  margin:150px -33px 0 0;
+  span{font:($fontH*15) "Yantramanav Black";
+  color: rgba(255, 255, 255,0.1);
+  letter-spacing: -15px;
+  }
+  .projects &{
+    position:absolute;
+    right:340px;
+    top:0;
+    .vertical{
+      left:92px;
+    }
+  }
+}
+p{
+  color:#a7a8b0;
+}
+p.vertical{
+  position: absolute;
+  color:$fontColor;
+  font: 1.5*$fontH RalewayThin;
+  transform: rotate(-90deg);
+  top: $fontH*15/1.7;
+  left: 100px;
+}
+p.main{
+  margin:240px 0 0 -50px;
+  width: 475px;
+}
+p.main.CEOtext{
+  margin:10px 0 0 -50px;
+}
+div.blue{
+  width:$Wmission;
+  height:$Hmission;
+  background:linear-gradient(to top, $bg 5%, transparent), url("../img/mountains.png") no-repeat right top;
+  background-size: 100% auto;
+  box-shadow:-20px 50px 220px $boxShad;
+  //z-index: -1;
+}
+div.projects{
+  height:1292px;
+  width:100%;
+  display:block;
+  padding-right: 240px;
+  &, &>.letterR{position:relative;}
+  img{
+    opacity:0.5;
+  }
+  background-size: cover;
+}
+.letterR{
+  font:1296px "Raleway Black";
+  color: rgba(25, 30, 63, 0.8);
+  text-transform: uppercase;
+  text-shadow:0 178px 152px $boxShad;
+  left:12.5%;
+  line-height: 70%;
+}
+.proglogos{
+  display: flex;
+  position: absolute;
+  top:250px;
+  left:370px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:990px;
+  div{
+    margin:60px 35px ;
+  }
+  div>img{
+    width:$logowidth;
+    height:auto;
+  }
+}
+.person{
+  width:645px;
+  position:relative;
+  float:left;
+  img{
+    width:408px;
+    height:auto;
+  }
+ .info{
+   position: absolute;
+   p.job{
+   line-height: 2em;
+   margin-bottom: 40px;
+ }
+ }
+}
+div.members{
+  width:1290px;
+  margin:660px auto 0;
+  padding-top:140px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  :after{
+    content: '.';
+    clear:both;
+    font-size: 0;
+  }
+
+  .person{
+    height:407px;
+    overflow: hidden;
+    &:nth-of-type(1),&:nth-of-type(4){
+      .info{
+      box-sizing: padding-box;
+      top:50%;
+      right:10px;
+      }
+    }
+    &:nth-of-type(2),&:nth-of-type(3) {
+      width:550px;
+      margin-top: 130px;
+      margin-bottom: 0;
+      right:0;
+    div:not(.info){
+      text-align: right;
+    }
+    .info{
+      top:50%;
+      left:0;
+    }
+  }
+  &:nth-of-type(4) {
+    margin-top: 260px;
+    //left:7%;
+    div:not(.info){
+      text-align: left;
+    }
+    .info{
+      top:50%;
+      right:0;
+    }
+  }
+  &:nth-of-type(3){
+    margin-top: 0;
+  }
+}
+}
+div.team{
+  position:relative;
+  display: block;
+  height:100%;
+  padding-top:85px;
+      .letterR{
+      position:absolute;
+      left:560 *100% / 1920;
+      top:660px;
+      z-index:-1;
+      }
+  div.Big-numbers{
+    position:absolute;
+    left:320 *100% / 1920;
+    top:0;
+    margin:0;
+    .vertical{
+      left:111px;
+    }
+  }}
+.person.CEO{
+  max-width:837px;
+  min-height:660px;
+  position:relative;
+    div:first-of-type{
+    position:absolute;
+    top:0;
+    right:0;
+      img{
+        width:auto;
+        height:660px;
+      }
+      .mask{
+        background-color: rgba(25,30,63,0.8);
+        box-shadow:0 152px 178px 50px $boxShad;
+        width:100%;
+        height:100%;
+      }}
+.info{
+    position:absolute;
+    min-height:50%;
+    bottom:0;
+    left:-30%;
+    .main{
+        margin:20px 0 0 0;
+        line-height: 1.5em;
+      }
+  }
+  margin:0 0 0 (783 * 100% / 1920);
+}
+h3.name{
+  color:$fontColor;
+  position:relative;
+  font:38px RalewayThin;
+  text-indent: 0;
+  &:before{
+    content: '.';
+    font-size:0;
+    position:absolute;
+    top:-30px;
+    width:57px;
+    height:0;
+    border:1px solid $fontColor;
+  }
+}
+div.events{
+  display:block;
+  position:relative;
+  width:100%;
+  height:825px;
+  .Big-numbers{
+    position: relative;
+    max-width:14%;
+    margin-top:0;
+    left:45%;
+    span{
+      line-height: 0.7;
+    }
+    .vertical{
+      left:42%;
+      top:40%;
+    }
+    }
+  p.letterR{
+    position:absolute;
+    color:rgba(25, 30, 63, 0.61);
+    top:0;
+    left:50%;
+  }
+  div.eventText{
+    position:relative;
+    left:25%;
+    width:25%;
+    top:20%;
+
+    p.main, h4{
+      margin:34px 0 0;
+      position:relative;
+      color:$fontColor;
+    }
+    h4{
+    font:1.5*$h2-font  RalewayThin;
+    margin-bottom: 34px;
+    }
+  }
+}
+div.bottom{
+  width:100%;
+
+}
+footer{
+  width:100%;
+  height:420px;
+  padding-top: 200px;
+  text-align: center;
+  color:$fontColor;
+  .footerMenu{
+    min-width:30%;
+    margin:35px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+      a{
+        display:block;
+        text-decoration: underline;
+        float:left;
+        margin:12px;
+        height:25px;
+      }
+  }
+  img{
+    opacity: 0.2;
+    width:100px;
+    height:auto;
+  }
+  .copyRight{
+    margin-top: -15px;
+  }
+}
+
+@import 'media_css';

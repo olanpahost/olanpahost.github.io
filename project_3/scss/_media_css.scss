@@ -1,0 +1,88 @@
+@media (max-width:1420px) {
+  div.mission, div.events{
+    .Big-numbers{
+      margin-top: 0;
+      position: absolute;
+      z-index: 10;
+    }
+    p.main{
+      z-index: 10;
+      margin-left: 0;
+      margin-top: 300px;
+    }
+    div.blue{
+      position:absolute;
+    }
+    p.letterR{
+      left:5%;
+      top:10%;
+    }
+    .eventText{
+      width:80%;
+      margin:150px 10vh 0 1vh;
+    }
+  }
+  .projects{
+    p.letterR{
+      margin:5% 0;
+      left:5%;
+      top:10%;
+    }
+    div.Big-numbers{
+      right:unset;
+      margin-top: -50px;
+      left:20px;
+    }
+    div.proglogos{
+      left:20%;
+      width:50%;
+      div{
+        margin: 20px 30px;
+      }
+    }
+  }
+  .team{
+    .Big-numbers{
+      z-index: 10;
+      margin: 0 auto;
+    }
+    .person.CEO{
+      margin:0 15% 0;
+      div.info{
+        left:0;
+        z-index:10;
+      }
+    }
+    .members{
+      margin: 0 auto;
+      width:100%;
+        div.person{
+          div.info{
+            left:0;
+            z-index:10;
+          }
+          left:unset;
+          &:nth-of-type(n+1){
+            width:410px;
+            position:relative;
+          margin: 5vh;
+          }
+        }
+    }
+    }
+}
+@media (max-width: 730px){
+  .projects{
+    .letterR{
+      font-size: 900px;
+      left:0;
+    }
+
+    div.wrapper{
+  overflow-x:hidden;
+      p.letterR{
+        display:none;
+      }
+    }
+  }
+}

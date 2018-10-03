@@ -1,0 +1,19 @@
+.wrapper{
+  max-width:$minW;
+  width:100%;
+  background:  url('../img/bgMount.png') top center no-repeat,
+  linear-gradient(to bottom, $bg $headH, transparent ($headH+1.8*$missionH), //$bg ($missionH*2.5+$headH),
+                  transparent calc(100% - 420px/2), $bg 100%),
+  //url('../img/projects.png')  center ($missionH+$headH) no-repeat,
+  url('../img/E_background.png') bottom center no-repeat;
+  background-size:100% auto;
+  height: 100%;
+  font:$fontH RalewayThin;
+  margin:$mCenter;
+  .projects{
+    background:
+    linear-gradient(to top,$bg 2vh, transparent 100%),
+    url('../img/projects.png')  center bottom no-repeat;
+    background-size: 100% auto;
+  }
+}
