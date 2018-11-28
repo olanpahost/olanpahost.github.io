@@ -1,0 +1,12 @@
+body{
+	background:url(../img/weather.jpg) no-repeat center top;
+	background-size:95% auto;
+}
+.wrapper{
+	width:50%;
+	margin:0 auto;
+}
+p{
+	line-height:0em;
+	color:#ccc;
+}
