@@ -129,7 +129,10 @@ form.form__physOsoba {
   form.form__physOsoba input {
     background-color: #f3f7fa;
     border-radius: 5px;
-    position: relative; }
+    position: relative;
+  padding-left:10px;
+    color:gray;
+  }
 
 .popupForm__header {
   width: 600px;
