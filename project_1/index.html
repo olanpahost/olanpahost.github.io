@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Barista Training</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
@@ -79,11 +79,11 @@
                     </div>
                     <div class="row" id="tabs">
                         <ul class="nav nav-tabs">
-                            <li><a href="#tabs-1">Basic</a></li>
-                            <li><a href="#tabs-2">Premium</a></li>
-                            <li><a href="#tabs-3">platinum</a></li>
+                            <li><a href="#tabs-1" data-toggle="tab">Basic</a></li>
+                            <li><a href="#tabs-2" data-toggle="tab">Premium</a></li>
+                            <li><a href="#tabs-3" data-toggle="tab">platinum</a></li>
                         </ul>
-                        <div class="row" id="tabs-1">
+                        <div class="tab-pane" id="tabs-1">
                             <div class="col-lg-7 col-md-7 col-sm-5 hidden-xs"><img src="img/priceBasic.png"
                                                                                    class="img-responsive"
                                                                                    alt="price of the basic course">
@@ -98,23 +98,25 @@
                                 <button class="btn btn-default" id="beginners">registration</button>
                             </div>
                         </div>
-                        <div class="row" id="tabs-2">
+                        <div class="tab-pane" id="tabs-2">
                             <div class="col-lg-7 col-md-7 col-sm-5 hidden-xs"><img src="img/priceBasic.png"
+                                                                                   title="Premium"
                                                                                    class="img-responsive"
                                                                                    alt="price of the premium course">
                             </div>
                             <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
-                                <h3>Beginners Course</h3>
+                                <h3>Premium Course</h3>
                                 <div class="sprite">
                                     <div class="img"></div>
                                     <div class="img"></div>
                                 </div>
-                                <p class="usd">1500 <span class="small">usd</span></p>
+                                <p class="usd">2500 <span class="small">usd</span></p>
                                 <button class="btn btn-default" id="premium">registration</button>
                             </div>
                         </div>
-                        <div class="row" id="tabs-3">
+                        <div class="tab-pane" id="tabs-3">
                             <div class="col-lg-7 col-md-7 col-sm-5 hidden-xs"><img src="img/priceBasic.png"
+                                                                                   title="Platinum"
                                                                                    class="img-responsive"
                                                                                    alt="price of the platinum course">
                             </div>
@@ -124,7 +126,7 @@
                                     <div class="img"></div>
                                     <div class="img"></div>
                                 </div>
-                                <p class="usd">1500 <span class="small">usd</span></p>
+                                <p class="usd">3500 <span class="small">usd</span></p>
                                 <button class="btn btn-default" id="platinum">registration</button>
                             </div>
                         </div>
@@ -150,7 +152,7 @@
                                 <li>Methods for collecting coffee berries</li>
                                 <li>Processing collected berries</li>
                                 <li>Calibration and sorting</li>
-                                <li>Some methods of classification and labeling  of coffee beans.</li>
+                                <li>Some methods of classification and labeling of coffee beans.</li>
                                 <li>Formation of grade names.</li>
                                 <li>Storage of green (not fried) Coffee</li>
                             </ul>
