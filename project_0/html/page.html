@@ -1,0 +1,145 @@
+<div class="container bg-page">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="../index.html">Mobile devices</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="../index.html">Smartphones</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                Apple iPhone 6s plus 128GB Rose Gold (MKUD2)
+            </li>
+        </ol>
+    </nav>
+    <h3 class="good__page-h3"> Apple iPhone 6s plus Silver (ME433) </h3>
+    <section class="section row">
+        <section class="goods col-lg-10 col-12">
+            <div class="row">
+                <div class="slider__block col-lg-6 col-12">
+                    <div class="row justify-content-between">
+                        <div class="slider_nav">
+                            <div><img src="img/data_smart/smartphon1.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon2.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon3.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon4.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon1.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon5.png" alt="photo" title="smart photo"></div>
+                        </div>
+                        <div class="goods__slider col-12 col-md-8 col-xl-9">
+                            <div><img src="img/data_smart/smartphon1.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon2.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon3.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon4.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon1.png" alt="photo" title="smart photo"></div>
+                            <div><img src="img/data_smart/smartphon5.png" alt="photo" title="smart photo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods__info col-lg-6 col-12">
+                    <div class=" goods__info-upline">
+                        <div class="merchand_item-stars">
+                            <i class="fas fa-star fa-sm"></i>
+                            <i class="fas fa-star fa-sm"></i>
+                            <i class="fas fa-star fa-sm"></i>
+                            <i class="fas fa-star fa-sm"></i>
+                            <i class="fas fa-star fa-sm"></i>
+                            <span class="stars_vote_number">(18)</span>
+                        </div>
+                        <div class="stock">On stock</div>
+                    </div>
+                    <p class="goods__info-description text">Mobile Phone - Apple A9 with 64-bit architecture, M9 motion
+                        coprocessor, 5.5" Retina touch screen 1920x1080 with 3D-Touch, 64GB of internal memory, WiFi
+                        802.11a/b/g/n/ac, Bluetooth 4.0, NFC, 12Mpx main camera with True Tone Flash and optical image
+                        stabilization, GPS, Touch ID, iOS 9
+                    </p>
+                    <div class="goods__info-features">
+                        <div class="goods__select">
+                            <label for="check-size" class="label__select">Storage size</label>
+                            <br>
+                            <select name="storage-size" id="check-size">
+                                <option value="128MB">128MB</option>
+                                <option value="256MB">256MB</option>
+                                <option value="500MB">500MB</option>
+                            </select>
+                        </div>
+                        <div class="goods__select">
+                            <label for="check-color" class="label__select">Storage size</label>
+                            <br>
+                            <select name="storage-size" id="check-color">
+                                <option value="">Rose Gold</option>
+                                <option value="">Red</option>
+                                <option value="">White</option>
+                                <option value="">Black</option>
+                                <option value="">Black</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="goods__info-buy">
+                        <div class="merchand_item-price text-30px">750</div>
+                        <button class="button button-long text-18px" id="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blocks col-lg-2 col-12">
+            <div class="block">
+                <h4 class="h4 car">Delivery</h4>
+                <p class="block-text">Free delivery for
+                    orders starting from $300
+                    (in Kiev and the surrounding area)
+                </p>
+            </div>
+            <div class="block">
+                <h4 class="h4 pickup">pickup</h4>
+                <p class="block-text">Pickup form the shop
+                    or from the Delivery Service office
+                    is available.
+                </p>
+            </div>
+            <div class="block">
+                <h4 class="h4 refund">refund</h4>
+                <p class="block-text">If any damages or
+                    other issues, the product can be returned
+                    within 14 days free of charge
+                </p>
+            </div>
+        </section>
+    </section>
+    <script>
+        $('.goods__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            prevArrow: '<div class="slider__arrow-box"><i class="fas fa-chevron-left"></i></div>',
+            nextArrow: '<div class="slider__arrow-box"><i class="fas fa-chevron-right"></i></div>',
+            asNavFor: '.slider_nav'
+        });
+        $('.slider_nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.goods__slider',
+            vertical: true,
+            arrows: true,
+            verticalSwipping: true,
+            prevArrow: '<i class="fas fa-sort-up"></i>',
+            nextArrow: '<i class="fas fa-sort-down"></i>',
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 769,
+                    settings: {
+                        vertical: false
+                    }
+                }
+            ]
+        });
+    </script>
+</div>
+
+

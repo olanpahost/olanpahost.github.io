@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technoshop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="prldr">
+      <div class="svg_anm"></div>
+    </div>
+    <div class="container-fluid bg">
+      <div class="container">
+        <header class="header">
+          <div class="row">
+            <div class="col-8 col-lg-10">
+              <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-grey" href="#">About us</a></li>
+                    <li class="nav-item"><a class="nav-link text-grey" href="#">Shipping&amp;Payment</a></li>
+                    <li class="nav-item"><a class="nav-link text-grey" href="#">Payment</a></li>
+                    <li class="nav-item"><a class="nav-link text-grey" href="#">Guarantee</a></li>
+                    <li class="nav-item"><a class="nav-link text-grey" href="#">Contact Us</a></li>
+                    <li class="nav-item login"><a class="nav-link" href="#">Login</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-2">
+              <div class="header__info">
+                <div class="header__info-text">
+                  <div class="row"><i class="fas fa-shopping-cart"></i><span id="nitems">&nbsp; 2 &nbsp;</span>items</div>
+                  <div class="row">
+                    <p class="text-center text24">&#36;<span id="total_summ">100,60</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom row">
+            <div class="col-12 col-lg-2 logo"><img class="logo-png" src="img/logo.png"></div>
+            <div class="col-12 col-lg-10 p-0 header__bottom__right">
+              <div class="header__search row">
+                <div class="phone text24 col-13 col-md-3"><i class="fa fa-phone fa-xs fa-rotate-90 blue-icon"></i><a href="#tel:0800300030">&nbsp;0&nbsp;800&nbsp;300&nbsp;0&nbsp;30</a></div>
+                <div class="input-group col-12 col-sm-6">
+                  <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fa fa-search fa-rotate-90 fa-sm blue-icon"></i></span></div>
+                  <input class="form-control" type="text" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="header__menu">
+                <ul class="menu row m-0">
+                  <li class="dropdown-title menu-item blue-icon text24"><a class="menu-item-a blue-icon" href="#">Mobile devices</a>
+                    <div class="dropdown row"><a class="menu-subitem text-black col-3" href="index.html">Smartphones</a><a class="menu-subitem text-black col-3" href="index.html">Mobile Phones</a><a class="menu-subitem text-black col-3" href="index.html">Cover and Screen Protectors</a><a class="menu-subitem text-black col-3" href="index.html">Technical Accessories</a><a class="menu-subitem text-black col-3" href="index.html">Earings and Speakers</a><a class="menu-subitem text-black col-3" href="index.html">Watchess and Bracelets</a><a class="menu-subitem text-black col-3" href="index.html">Action Cameras</a><a class="menu-subitem text-black col-3" href="index.html">Gadgets for Home and Health</a><a class="menu-subitem text-black col-3" href="index.html">Radio Controlled Model</a>
+                    </div>
+                  </li>
+                  <li class="menu-item text24"><a class="menu-item-a" href="#">computers &amp; notebooks</a></li>
+                  <li class="menu-item text24"><a class="menu-item-a" href="#">TV &amp; audio</a></li>
+                  <li class="menu-item text24"><a class="menu-item-a" href="#">Photo &amp; Video Camers</a></li>
+                  <li class="menu-item text24"><a class="menu-item-a" href="#">Appliances</a></li>
+                  <li class="menu-item text24"><a class="menu-item-a" href="#">Sport</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container-fluid bg-gray">
+        <div class="container">
+          <div class="row">
+            <aside class="aside__filters col-4 col-lg-2">
+              <div class="filters">
+                <h3 class="aside__h3">brand</h3>
+                <form class="aside__filters__list"></form>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="Apple">
+                  <label class="filter__check-label" for="Apple">Apple (<span class="filter__amount">57</span>)</label>
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="Samsung">
+                  <label class="filter__check-label" for="Samsung">Samsung (<span class="filter__amount">57</span>)</label>
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="Lenovo">
+                  <label class="filter__check-label" for="Lenovo">Lenovo (<span class="filter__amount">57</span>)</label>
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="Nokia">
+                  <label class="filter__check-label" for="Nokia">Nokia (<span class="filter__amount">57</span>)</label>
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="Philips">
+                  <label class="filter__check-label" for="Philips">Philips (<span class="filter__amount">57</span>)</label>
+                </div>
+                <h3 class="aside__h3">price</h3>
+                <form class="aside__filters__list"></form>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="price1">
+                  <label class="filter__check-label" for="price1">$0 - $100 (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="price2">
+                  <label class="filter__check-label" for="price2">$150 - $200 (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="price3">
+                  <label class="filter__check-label" for="price3">$200 - $300 (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="price4">
+                  <label class="filter__check-label" for="price4">$300 - $400 (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="price5">
+                  <label class="filter__check-label" for="price5">$400 - $1000 (</label><span class="filter__amount">57</span>)
+                </div>
+                <h3 class="aside__h3">color</h3>
+                <form class="aside__filters__list"></form>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="color6">
+                  <label class="filter__check-label" for="color6">White (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="color7">
+                  <label class="filter__check-label" for="color7">Silver (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="color8">
+                  <label class="filter__check-label" for="color8">Black (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="color9">
+                  <label class="filter__check-label" for="color9">Golden (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="color10">
+                  <label class="filter__check-label" for="color10">Pink (</label><span class="filter__amount">57</span>)
+                </div>
+                <h3 class="aside__h3">screen size</h3>
+                <form class="aside__filters__list"></form>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="screensize11">
+                  <label class="filter__check-label" for="screensize11">2.3'' and less (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="screensize12">
+                  <label class="filter__check-label" for="screensize12">2.4-3.9'' (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="screensize13">
+                  <label class="filter__check-label" for="screensize13">4.3-4.5'' (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="screensize14">
+                  <label class="filter__check-label" for="screensize14">4.6-4.8'' (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="screensize15">
+                  <label class="filter__check-label" for="screensize15">5'' (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="screensize16">
+                  <label class="filter__check-label" for="screensize16">5.6-5.9'' (</label><span class="filter__amount">57</span>)
+                </div>
+                <div class="filters__item">
+                  <input class="filter__check-item" type="checkbox" id="screensize17">
+                  <label class="filter__check-label" for="screensize17">6.0'' and more (</label><span class="filter__amount">57</span>)
+                </div>
+              </div>
+            </aside>
+            <main class="mainpart col-8 col-lg-9 offset-lg-1">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Mobile devices</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Smartphones</li>
+                </ol>
+              </nav>
+              <h2 class="page__h2">Smartphones</h2>
+              <p class="main__text founded">Founded:&nbsp;<span class="filter__amount">57</span></p>
+              <div class="sort-by main__text">
+                <p class="main__text sort-by__text">Filter:</p>
+                <div class="sort-by__item">price</div>
+                <div class="sort-by__item">most popular</div>
+                <div class="sort-by__item sort-by__item-active">name</div>
+              </div>
+              <div class="merchandises">
+                <div class="row merch-row"></div>
+                <div class="row justify-content-md-center merch-bottom">
+                  <div class="col-md-6 col-12 col-lg-4">
+                    <button class="button button-white" id="button">Load other 5 items</button>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-lined">
+      <footer class="container">
+        <div class="row footer">
+          <div class="col-lg-3 col-6">
+            <div class="footer__logo"><img class="footer__logo-img" src="img/logo.png" title="" alt="logo"><span>&nbsp;&copy; 2007-2020</span></div>
+          </div>
+          <div class="col-lg-3 col-6 footer__column">
+            <h4 class="footer__h4">We are opened</h4>
+            <p class="footer__text">Mo – Fr: 9 am - 9 pm</p>
+            <p class="footer__text">Sa: 9 am - 8 pm</p>
+          </div>
+          <div class="col-lg-3 col-6 footer__column">
+            <h4 class="footer__h4">Contact us</h4><a class="text24" href="#tel:0800300030">&nbsp;0&nbsp;800&nbsp;300&nbsp;0&nbsp;30</a><a class="footer__text footer__mail" href="#mail:info@techshop.com">info@techshop.com</a>
+          </div>
+          <div class="col-lg-3 col-12 col-md-6 footer__column">
+            <h4 class="footer__h4">Social services</h4>
+            <div class="footer__social"><a class="footer__solcial-circle" href="#"><i class="fab fa-facebook-f fa-lg"></i></a><a class="footer__solcial-circle" href="#"><i class="fab fa-google-plus-g fa-lg"></i></a><a class="footer__solcial-circle" href="#"><i class="fab fa-twitter fa-lg"></i></a><a class="footer__solcial-circle" href="#"><i class="fab fa-instagram fa-lg"></i></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="libs/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

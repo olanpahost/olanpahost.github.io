@@ -1,0 +1,43 @@
+ul.menu>li:last-child a{
+	color:#ca0500;
+}
+div.address{
+	float:left;
+	width:280px;
+	height:500px;
+	padding-top:30px;
+	box-sizing:border-box;
+}
+#map{
+	float:left;
+	width:960px;
+	height:500px;
+	z-index:10;
+}
+
+.content{
+	clear:both;
+	position:relative;
+	height:500px;
+	width:1366px;
+	margin:0;
+	padding:0 0 0 125px;
+	box-sizing:border-box;
+}
+.content p{
+	font:14px HelveticaNeueLight;	
+	line-height:1.8em;
+	margin:0;
+}
+.content h4{
+	font:15px HelveticaNeueLight;
+    color:#000;	
+	margin:25px 0 0 0;
+}
+
+div.content::after{
+	content:'.';
+	font-size:0px;
+	width:100%;
+	clear:both;
+}

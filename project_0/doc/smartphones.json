@@ -1,0 +1,127 @@
+[
+  {
+    "id": "0001",
+    "title": "Apple iPhone 6s plus Silver (ME433)",
+    "images": [
+      "img/data_smart/smartphon1.png",
+      "img/data_smart/apple4s_1.jpg",
+      "img/data_smart/smartphon3.png"
+    ],
+    "stars": 4.5,
+    "price": 750
+  },
+  {
+    "id": "0011",
+    "title": "Samsung Galaxy A7",
+    "images": [
+      "img/data_smart/samsung_1.jpg",
+      "img/data_smart/samsung_2.jpg",
+      "img/data_smart/samsung_3.jpg"
+    ],
+    "stars": 4.5,
+    "price": 558
+  },
+  {
+    "id": "0012",
+    "title": "Samsung Galaxy A8+",
+    "images": [
+      "img/data_smart/samsungA8plus_1.jpg",
+      "img/data_smart/samsungA8plus_2.jpg",
+      "img/data_smart/samsungA8plus_3.jpg"
+    ],
+    "stars": 3.8,
+    "price": 600
+  },
+  {
+    "id": "0002",
+    "title": "Apple iPhone 6s plus Silver (ME433)",
+    "images": [
+      "img/data_smart/smartphon2.png",
+      "img/data_smart/smartphon3.png",
+      "img/data_smart/smartphon4.png"
+    ],
+    "stars": 4.5,
+    "price": 750
+  },
+  {
+    "id": "0003",
+    "title": "Apple iPhone 6s 16GB Rose Gold (MKQM2)",
+    "images": [
+      "img/data_smart/smartphon3.png",
+      "img/data_smart/smartphon4.png",
+      "img/data_smart/smartphon5.png"
+    ],
+    "stars": 4.5,
+    "price": 750
+  },
+  {
+    "id": "0004",
+    "title": "Apple iPhone 6 16GB Space Gray (ME433)",
+    "images": [
+      "img/data_smart/smartphon4.png",
+      "img/data_smart/smartphon5.png",
+      "img/data_smart/smartphon6.png"
+    ],
+    "stars": 2.5,
+    "price": 750
+  },
+  {
+    "id": "0005",
+    "title": "Apple iPhone 4s (MKQM2)",
+    "images": [
+      "img/data_smart/smartphon5.png",
+      "img/data_smart/smartphon5.png",
+      "img/data_smart/smartphon5.png"
+    ],
+    "stars": 3,
+    "price": 280
+  },
+  {
+    "id": "0006",
+    "title": "Apple iPhone 6s 128GB Gold (MKQV2)",
+    "images": [
+      "img/data_smart/smartphon6.png",
+      "img/data_smart/smartphon6.png",
+      "img/data_smart/smartphon6.png"
+    ],
+    "stars": 4.5,
+    "price": 670
+  },
+  {
+    "id": "0007",
+    "title": "Lorem ipsum dolor sit",
+    "images": [
+      "img/data_smart/smartphon7.png",
+      "img/data_smart/smartphon7.png",
+      "img/data_smart/smartphon7.png"
+    ],
+    "stars": 4.5,
+    "price": 750
+  },
+  {
+    "title": "Apple iPhone 5S 16GB Space Gray (ME432)",
+    "images": [
+      "img/data_smart/smartphon8.png",
+      "img/data_smart/smartphon8.png",
+      "img/data_smart/smartphon8.png"
+    ],
+    "stars": 4,
+    "price": 650
+  },
+  {
+    "title": "Apple iPhone 6s Plus 128GB Space Gray (MKUD2)",
+    "images": [
+      "img/data_smart/smartphon9.png",
+      "img/data_smart/smartphon9.png",
+      "img/data_smart/smartphon9.png"
+    ],
+    "stars": 5,
+    "price": 670
+  },
+  {
+    "title": "Apple iPhone 6s Plus 128GB Space Gray (MKUD2)",
+    "images":[],
+    "stars": 5,
+    "price": 670
+  }
+]
