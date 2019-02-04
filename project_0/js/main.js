@@ -1,4 +1,21 @@
 $('document').ready(function () {
+    const PARENT_ROW = ".row.merch-row";
+
+    const ApplPlugin = ($ctn) => {
+        $ctn.slick(
+            {
+                arrows: true
+            }
+        );
+    };//функція, що підключає плагін slick до елементів
+
+    $(window).on('load', function () {
+        var $preloader = $('#prldr'),
+            $svg_anm = $preloader.find('.svg_anm');
+        $svg_anm.fadeOut();
+        $preloader.fadeOut('slow');
+    });
+
     let counter = 0,
         toLoad = 5,
         endReached = false;
@@ -10,7 +27,7 @@ $('document').ready(function () {
             document.body.offsetHeight, document.documentElement.offsetHeight,
             document.body.clientHeight, document.documentElement.clientHeight
         );
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
     }
     $("#button").on('click', function () {//обробка події про підвантаження товарів
         num = $(PARENT_ROW).find($(".white-block")).length;

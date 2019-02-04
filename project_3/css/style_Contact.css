@@ -1,3 +1,7 @@
+.container{
+	max-width: 1369px;
+	margin:0 auto;
+}
 ul.menu>li:last-child a{
 	color:#ca0500;
 }

@@ -106,6 +106,10 @@ body {
   color: #fff;
   font-size: 16px;
   background-color: transparent; }
+.container{
+  max-width: 1369px;
+  margin:0 auto;
+}
   body article {
     position: relative;
     max-width: 966px;

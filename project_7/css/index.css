@@ -138,3 +138,10 @@ footer a{
     text-decoration: none;
     padding:5px 0 0 18px;
 }
+
+@media (max-aspect-ratio: 4/3) {
+    body {
+        background-position: center center;
+        background-size: auto 100%;
+    }
+}
