@@ -43,7 +43,7 @@ header{
     height:150px;
     margin: 0 auto;
     position: relative;
-    background: url("../img/BackGr_2a.png") no-repeat, rgba(200,200,200,0.05) ;
+    background: url("../img/BackGr_2a.jpg") no-repeat, rgba(200,200,200,0.05) ;
     background-size: 100% auto;
     background-position: top left;
     line-height: 2em;
