@@ -88,9 +88,13 @@ a {
 .header {
   position: relative; }
 
-.navbar {
-  background-color: black;
+#navbar {
   height: 30px; }
+
+.navbar {
+  padding: 0;
+  background-color: transparent;
+  top: -1px; }
   .navbar .login {
     color: white !important; }
   .navbar .navbar-nav:hover a {
@@ -99,12 +103,12 @@ a {
       opacity: 1;
       color: white; }
 
-#navbarSupportedContent {
-  z-index: 50; }
+.navbar-toggler {
+  padding-top: 2px;
+  padding-bottom: 2px; }
 
-.navbar-collapse.collapse.in {
-  display: block;
-  z-index: 160; }
+#navbarSupportedContent {
+  z-index: 2; }
 
 .nav-item {
   color: #c5c5c5;
