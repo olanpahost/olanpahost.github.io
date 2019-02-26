@@ -1,34 +1,17 @@
 $('document').ready(function () {
-    const PARENT_ROW = ".row.merch-row";
-
-    const ApplPlugin = ($ctn) => {
-        $ctn.slick(
-            {
-                arrows: true
-            }
-        );
-    };//функція, що підключає плагін slick до елементів
-
-    $(window).on('load', function () {
-        var $preloader = $('#prldr'),
-            $svg_anm = $preloader.find('.svg_anm');
-        $svg_anm.fadeOut();
-        $preloader.fadeOut('slow');
-    });
-
     let counter = 0,
         toLoad = 5,
         endReached = false;
     endReached = LoadGoods(0, 3, endReached, counter);
-    const MinSearch = (a, b) => (a > b) ? b : a;
+    const MinSearch = (a, b) => (a > b)?b:a;
     const NoScroll = () => {
-        let scrollHeight = Math.min(//блок, що дозволяє не промотувати сторінку при створенні нових елементів
-            document.body.scrollHeight, document.documentElement.scrollHeight,
-            document.body.offsetHeight, document.documentElement.offsetHeight,
-            document.body.clientHeight, document.documentElement.clientHeight
-        );
-        window.scrollTo(0, 0);
-    }
+        // let scrollHeight = Math.min(//блок, що дозволяє не промотувати сторінку при створенні нових елементів
+        //     document.body.scrollHeight, document.documentElement.scrollHeight,
+        //     document.body.offsetHeight, document.documentElement.offsetHeight,
+        //     document.body.clientHeight, document.documentElement.clientHeight
+        // );
+        window.scrollTo(0,0);
+    };
     $("#button").on('click', function () {//обробка події про підвантаження товарів
         num = $(PARENT_ROW).find($(".white-block")).length;
         endReached = LoadGoods(num, toLoad, endReached, counter)
@@ -62,7 +45,7 @@ $('document').ready(function () {
                             $('<h4>', {class: "h4__item"}).append(data[i].title).appendTo(blockInfo);
                             let priceBlock = $('<div>', {class: "merchand_item__info-price"}).appendTo(blockInfo);
                             let stars = $('<div>', {class: "merchand_item-stars"}).appendTo(priceBlock);
-                            for (let j = 0; j <= data[i].stars - 0.5; j++) {//stars
+                            for (let j = 0; j <= (+data[i].stars - 0.5); j++) {//stars
                                 stars.append((j < 0.5 + data[i].stars) ? $('<i>', {class: "fas fa-star fa-sm"}) : $('<i>', {class: "fas .fa-star-half-alt"}));
                             }
 
@@ -98,7 +81,7 @@ $('document').ready(function () {
                 error: function () {
                     console.log('дані не завантажились');
                 }
-            })//end ajax
+            });//end ajax
             return endReached;
         }//end if
 

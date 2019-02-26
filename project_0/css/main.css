@@ -70,12 +70,25 @@ a {
   transform: translate(-50%, -50%); }
 
 @font-face {
-  font-family: PFDinTextCompProMedium;
-  src: url(../fonts/PFDinTextCompPro-Medium.ttf); }
+  font-family: "PFDinTextCompProMedium";
+  src: url("../fonts/PFDinTextCompPro-Medium/PFDinTextCompPro-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/PFDinTextCompPro-Medium/PFDinTextCompPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextCompPro-Medium/PFDinTextCompPro-Medium.otf") format("opentype"), url("../fonts/PFDinTextCompPro-Medium/PFDinTextCompPro-Medium.svg") format("svg"), url("../fonts/PFDinTextCompPro-Medium/PFDinTextCompPro-Medium.ttf") format("truetype"), url("../fonts/PFDinTextCompPro-Medium/PFDinTextCompPro-Medium.woff") format("woff"), url("../fonts/PFDinTextCompPro-Medium/PFDinTextCompPro-Medium.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: PFDinTextCompPrRegular;
-  src: url(../fonts/PFDinTextCompPro-Regular.ttf); }
+  font-family: "PFDinTextCompPrRegular";
+  src: url("../fonts/PFDinTextCompPro-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/PFDinTextCompPro-Regular.ttf"), url("../fonts/PFDinTextCompPro-Regular.woff") format("woff"), url("../fonts/PFDinTextCompPro-Regular.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "PFDinTextCompPro";
+  src: url("../fonts/PFDinTextCompPro-Thin.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/PFDinTextCompPro-Thin.ttf"), url("../fonts/PFDinTextCompPro-Thin.woff") format("woff"), url("../fonts/PFDinTextCompPro-Thin.woff2") format("woff2"); }
 
 .bg {
   background-image: linear-gradient(to bottom, black 30px, white 30px); }
@@ -247,8 +260,19 @@ a[href^="#tel"]:hover {
       .dropdown-title:hover .dropdown .menu-subitem {
         opacity: 1; }
 
+.button-collapse {
+  display: none; }
+
+.aside__filters .collapse {
+  display: block; }
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
 .aside__h3 {
-  font: 16px "PF Din Text Comp Pro";
+  font: 16px "PFDinTextCompPrRegular";
   text-transform: uppercase;
   margin: 30px 0 2px; }
 
@@ -259,7 +283,7 @@ input.filter__check-item[type="checkbox"] {
   opacity: 0; }
 
 .filter__check-label {
-  font: 13px "Arial Regular";
+  font: 13px Arial, "Arial Regular", san-serif;
   margin: 0 3px;
   position: relative; }
   .filter__check-label::before {
@@ -365,7 +389,7 @@ input.filter__check-item[type="checkbox"] {
   margin: 0 4px 0 0; }
 
 .merchand_item-price {
-  font: 24px "PF Din Text Comp Pro Medium";
+  font: 24px "PFDinTextCompProMedium";
   color: black; }
   .merchand_item-price::before {
     content: '\0024'; }
@@ -376,9 +400,14 @@ input.filter__check-item[type="checkbox"] {
   background-color: #24c3e0;
   border: none;
   color: white;
-  font: 16px "PF Din Text Comp Pro Medium";
+  font: 16px "PF Din Text Comp Pro Medium", "PFDinTextCompProMedium", serif;
   text-transform: uppercase;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  transition: color 250ms, background-color 250ms; }
+  .button:hover {
+    color: #24c3e0;
+    background-color: white;
+    outline: 1px solid #24c3e0; }
 
 .button-white {
   height: 40px;
@@ -388,7 +417,7 @@ input.filter__check-item[type="checkbox"] {
   border: 1px solid #24c3e0;
   margin-top: 60px;
   margin-bottom: 60px;
-  font: 18px "PF Din Text Comp Pro";
+  font: 18px "PF Din Text Comp Pro", "PFDinTextCompPro", serif;
   text-transform: none;
   transition: background-color 500ms, color 250ms; }
   .button-white:hover {
@@ -454,7 +483,7 @@ input.filter__check-item[type="checkbox"] {
   box-sizing: border-box; }
 
 .good__page-h3 {
-  font: 36px "PF Din Text Comp Pro";
+  font: 36px "PF Din Text Comp Pro", "PFDinTextCompPrRegular", serif;
   letter-spacing: 1px; }
 
 .slider__block, .goods__info {
@@ -522,7 +551,7 @@ input.filter__check-item[type="checkbox"] {
 
 .label__select {
   color: grey;
-  font: 13px 'Arial Regular'; }
+  font: 13px  Arial, serif; }
 
 .goods__info-features {
   display: flex;
@@ -606,12 +635,12 @@ input.filter__check-item[type="checkbox"] {
   align-content: flex-end; }
 
 .footer__h4 {
-  font: 12px "Arial Regular";
+  font: 12px Arial, serif;
   font-weight: bold;
   margin: 0 0 9px; }
 
 .footer__text {
-  font: 12px "Arial Regular";
+  font: 12px Arial, serif;
   margin: 0 0 4px; }
 
 .footer__mail {
@@ -658,6 +687,24 @@ input.filter__check-item[type="checkbox"] {
 @media (max-width: 1200px) {
   .button {
     font-size: 12px; } }
+
+@media (max-width: 980px) {
+  .bg-gray {
+    background: #f3f6f6; }
+  .button {
+    font-size: 12px; }
+  .filters {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .button-collapse {
+    display: block;
+    height: 20px;
+    padding: 0; }
+  .aside__filters .collapse {
+    display: none; }
+    .aside__filters .collapse.show {
+      display: block; } }
 
 @media (max-width: 770px) {
   .slider_nav {

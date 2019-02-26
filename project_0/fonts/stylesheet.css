@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('PFDinTextCompPro-Thin.eot');
+    src: url('PFDinTextCompPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('PFDinTextCompPro-Thin.woff2') format('woff2'),
+        url('PFDinTextCompPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('PFDinTextCompPro-Regular.eot');
+    src: url('PFDinTextCompPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PFDinTextCompPro-Regular.woff2') format('woff2'),
+        url('PFDinTextCompPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

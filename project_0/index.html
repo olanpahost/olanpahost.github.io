@@ -77,107 +77,114 @@
       <div class="container-fluid bg-gray">
         <div class="container">
           <div class="row">
-            <aside class="aside__filters col-4 col-lg-2">
-              <div class="filters">
-                <h3 class="aside__h3">brand</h3>
-                <form class="aside__filters__list"></form>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="Apple">
-                  <label class="filter__check-label" for="Apple">Apple (<span class="filter__amount">57</span>)</label>
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="Samsung">
-                  <label class="filter__check-label" for="Samsung">Samsung (<span class="filter__amount">57</span>)</label>
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="Lenovo">
-                  <label class="filter__check-label" for="Lenovo">Lenovo (<span class="filter__amount">57</span>)</label>
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="Nokia">
-                  <label class="filter__check-label" for="Nokia">Nokia (<span class="filter__amount">57</span>)</label>
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="Philips">
-                  <label class="filter__check-label" for="Philips">Philips (<span class="filter__amount">57</span>)</label>
-                </div>
-                <h3 class="aside__h3">price</h3>
-                <form class="aside__filters__list"></form>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="price1">
-                  <label class="filter__check-label" for="price1">$0 - $100 (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="price2">
-                  <label class="filter__check-label" for="price2">$150 - $200 (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="price3">
-                  <label class="filter__check-label" for="price3">$200 - $300 (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="price4">
-                  <label class="filter__check-label" for="price4">$300 - $400 (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="price5">
-                  <label class="filter__check-label" for="price5">$400 - $1000 (</label><span class="filter__amount">57</span>)
-                </div>
-                <h3 class="aside__h3">color</h3>
-                <form class="aside__filters__list"></form>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="color6">
-                  <label class="filter__check-label" for="color6">White (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="color7">
-                  <label class="filter__check-label" for="color7">Silver (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="color8">
-                  <label class="filter__check-label" for="color8">Black (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="color9">
-                  <label class="filter__check-label" for="color9">Golden (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="color10">
-                  <label class="filter__check-label" for="color10">Pink (</label><span class="filter__amount">57</span>)
-                </div>
-                <h3 class="aside__h3">screen size</h3>
-                <form class="aside__filters__list"></form>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="screensize11">
-                  <label class="filter__check-label" for="screensize11">2.3'' and less (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="screensize12">
-                  <label class="filter__check-label" for="screensize12">2.4-3.9'' (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="screensize13">
-                  <label class="filter__check-label" for="screensize13">4.3-4.5'' (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="screensize14">
-                  <label class="filter__check-label" for="screensize14">4.6-4.8'' (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="screensize15">
-                  <label class="filter__check-label" for="screensize15">5'' (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="screensize16">
-                  <label class="filter__check-label" for="screensize16">5.6-5.9'' (</label><span class="filter__amount">57</span>)
-                </div>
-                <div class="filters__item">
-                  <input class="filter__check-item" type="checkbox" id="screensize17">
-                  <label class="filter__check-label" for="screensize17">6.0'' and more (</label><span class="filter__amount">57</span>)
+            <aside class="aside__filters col-12 col-lg-2">
+              <button class="button button-collapse" data-toggle="collapse" data-target="#filters_panel">Filters</button>
+              <div class="collapse" id="filters_panel">
+                <div class="filters">
+                  <form class="aside__filters__list">
+                    <h3 class="aside__h3">brand</h3>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="Apple">
+                      <label class="filter__check-label" for="Apple">Apple (<span class="filter__amount">57</span>)</label>
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="Samsung">
+                      <label class="filter__check-label" for="Samsung">Samsung (<span class="filter__amount">57</span>)</label>
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="Lenovo">
+                      <label class="filter__check-label" for="Lenovo">Lenovo (<span class="filter__amount">57</span>)</label>
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="Nokia">
+                      <label class="filter__check-label" for="Nokia">Nokia (<span class="filter__amount">57</span>)</label>
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="Philips">
+                      <label class="filter__check-label" for="Philips">Philips (<span class="filter__amount">57</span>)</label>
+                    </div>
+                  </form>
+                  <form class="aside__filters__list">
+                    <h3 class="aside__h3">price</h3>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="price1">
+                      <label class="filter__check-label" for="price1">$0 - $100 (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="price2">
+                      <label class="filter__check-label" for="price2">$150 - $200 (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="price3">
+                      <label class="filter__check-label" for="price3">$200 - $300 (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="price4">
+                      <label class="filter__check-label" for="price4">$300 - $400 (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="price5">
+                      <label class="filter__check-label" for="price5">$400 - $1000 (</label><span class="filter__amount">57</span>)
+                    </div>
+                  </form>
+                  <form class="aside__filters__list">
+                    <h3 class="aside__h3">color</h3>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="color6">
+                      <label class="filter__check-label" for="color6">White (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="color7">
+                      <label class="filter__check-label" for="color7">Silver (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="color8">
+                      <label class="filter__check-label" for="color8">Black (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="color9">
+                      <label class="filter__check-label" for="color9">Golden (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="color10">
+                      <label class="filter__check-label" for="color10">Pink (</label><span class="filter__amount">57</span>)
+                    </div>
+                  </form>
+                  <form class="aside__filters__list">
+                    <h3 class="aside__h3">screen size</h3>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="screensize11">
+                      <label class="filter__check-label" for="screensize11">2.3'' and less (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="screensize12">
+                      <label class="filter__check-label" for="screensize12">2.4-3.9'' (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="screensize13">
+                      <label class="filter__check-label" for="screensize13">4.3-4.5'' (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="screensize14">
+                      <label class="filter__check-label" for="screensize14">4.6-4.8'' (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="screensize15">
+                      <label class="filter__check-label" for="screensize15">5'' (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="screensize16">
+                      <label class="filter__check-label" for="screensize16">5.6-5.9'' (</label><span class="filter__amount">57</span>)
+                    </div>
+                    <div class="filters__item">
+                      <input class="filter__check-item" type="checkbox" id="screensize17">
+                      <label class="filter__check-label" for="screensize17">6.0'' and more (</label><span class="filter__amount">57</span>)
+                    </div>
+                  </form>
                 </div>
               </div>
             </aside>
-            <main class="mainpart col-8 col-lg-9 offset-lg-1">
+            <main class="mainpart col-12 col-lg-9 offset-lg-1">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
