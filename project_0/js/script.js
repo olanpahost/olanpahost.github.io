@@ -13,4 +13,4 @@ const ApplPlugin = ($ctn) => {
             $svg_anm = $preloader.find('.svg_anm');
         $svg_anm.fadeOut();
         $preloader.fadeOut('slow');
-	}// end on load
+	})// end on load
